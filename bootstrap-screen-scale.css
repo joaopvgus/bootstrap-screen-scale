@@ -1,0 +1,75 @@
+/* set your variables here */
+:root {
+    --screen-scale-bg: black;
+    --screen-scale-width: fit-content;
+    --screen-scale-height: fit-content;
+    --screen-scale-padding: 10px;
+    --screen-scale-position: fixed;
+    --screen-scale-top: auto;
+    --screen-scale-right: auto;
+    --screen-scale-bottom: 0;
+    --screen-scale-left: 0px;
+    --screen-scale-font-size: 14px;
+    --screen-scale-font-color: white;
+}
+
+/* responsible for all the boxes composition */
+#screen-scale-xsm,
+#screen-scale-sm,
+#screen-scale-md,
+#screen-scale-lg,
+#screen-scale-xl,
+#screen-scale-xxl {
+    background-color: var(--screen-scale-bg);
+    width: var(--screen-scale-width);
+    height: var(--screen-scale-height);
+    padding: var(--screen-scale-padding);
+    position: var(--screen-scale-position);
+    top: var(--screen-scale-top);
+    right: var(--screen-scale-right);
+    bottom: var(--screen-scale-bottom);
+    left: var(--screen-scale-left);
+    font-size: var(--screen-scale-font-size);
+    color: var(--screen-scale-font-color);
+}
+
+@media not screen and (min-width:0px) and (max-width:575px) {
+    #screen-scale-xsm {
+        display: none;
+    }
+}
+
+/* responsible for the SMALL composition */
+@media not screen and (min-width:576px) and (max-width:767px) {
+    #screen-scale-sm {
+        display: none;
+    }
+}
+
+/* responsible for the MEDIUM composition */
+@media not screen and (min-width:768px) and (max-width:991px) {
+    #screen-scale-md {
+        display: none;
+    }
+}
+
+/* responsible for the LARGE composition */
+@media not screen and (min-width:992px) and (max-width:1199px) {
+    #screen-scale-lg {
+        display: none;
+    }
+}
+
+/* responsible for the EXTRA-LARGE composition */
+@media not screen and (min-width:1200px) and (max-width:1399px) {
+    #screen-scale-xl {
+        display: none;
+    }
+}
+
+/* responsible for the EXTRA-EXTRA-LARGE composition */
+@media not screen and (min-width:1400px) {
+    #screen-scale-xxl {
+        display: none;
+    }
+}
